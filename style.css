@@ -147,7 +147,7 @@ main .bord p::-webkit-scrollbar-thumb {
 .card .contain .card-di .contin {
   padding: 50px 20px;
 }
-.card .contain .card-di .contin h2 {
+.card .contain .card-di .contin h2, .card .contain .card-di .contin h4 {
   font-weight: 400;
   padding-bottom: 10px;
 }
@@ -162,28 +162,22 @@ main .bord p::-webkit-scrollbar-thumb {
 .card .contain .card-di .contin p a:hover {
   text-decoration: underline;
 }
-.card .contain .card-di .contin button {
-  width: 100px;
-  height: 40px;
-  background: #fff;
+.card .contain .card-di .contin .bot {
+  display: inline-block;
+  padding: 4px 30px;
   border-radius: 5px;
   margin-top: 20px;
   border: 1px solid #000;
   transition: 0.4s;
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
 }
-.card .contain .card-di .contin button:hover {
-  background: #000;
-  border-radius: 0;
-}
-.card .contain .card-di .contin button:hover a {
+.card .contain .card-di .contin .bot:hover {
   color: rgb(255, 255, 255);
   font-weight: 300;
-}
-.card .contain .card-di .contin button a {
-  text-decoration: none;
-  color: rgba(0, 0, 0, 0.8);
-  font-size: 20px;
-  transition: 0.4s;
+  background: #000;
+  border-radius: 0;
 }
 .card .contain .card-di .contin img {
   width: 28px;
@@ -273,7 +267,7 @@ footer img:hover {
   right: 20px;
   border: none;
   text-align: center;
-  padding: 8px 8px 5px 8px;
+  padding: 6px 8px 3px 8px;
   border-radius: 4px;
   cursor: pointer;
   display: none;
