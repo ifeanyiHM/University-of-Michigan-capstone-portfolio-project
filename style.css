@@ -223,6 +223,7 @@ main .bord p::-webkit-scrollbar-thumb {
 }
 .sect div form input:focus, .sect div form textarea:focus {
   border: 2px solid #f1f1f1;
+  outline: none;
 }
 .sect div form label {
   padding-top: 30px;

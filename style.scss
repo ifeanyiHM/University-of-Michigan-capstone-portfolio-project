@@ -43,7 +43,7 @@ header{
             width: 20px;
             height: 20px;
             padding-bottom: 10px;
-            
+
         }
 
         li{
@@ -80,7 +80,7 @@ header{
 // Styling the about page
 main{
     padding: 40px 20px;
-    
+
     .bord{
         border: 1px solid #7c3901;
         padding: 30px;
@@ -95,7 +95,7 @@ main{
             font-weight: 400;
             padding-top: 20px;
         }
-    
+
         p{
             font-size: 15px;
             font-weight: 520;
@@ -104,7 +104,7 @@ main{
             color: rgba(0, 0, 0, 0.8);
             height: 50vh;
             overflow-y: scroll;
-    
+
             &::-webkit-scrollbar {
                 width: 0.4em;
             }
@@ -158,7 +158,7 @@ main{
         font-weight: 400;
         padding-bottom: 30px;
     }
-    
+
     .contain{
         display: grid;
 
@@ -217,7 +217,7 @@ main{
                         text-decoration: none;
                         color: rgb(0, 0, 0, 0.8);
                         font-size: 20px;
-                        transition: 0.4s;                 
+                        transition: 0.4s;
                     }
                 }
 
@@ -261,7 +261,7 @@ main{
         }
 
         form{
-            
+
             input, textarea{
                 border: none;
                 background-color: rgb(0, 0, 0, 0);
@@ -269,17 +269,18 @@ main{
                 width: 100%;
                 color: #fff;
             }
-    
+
             input:focus, textarea:focus{
                 border: 2px solid #f1f1f1;
+                outline: none;
             }
-    
+
             label{
                 padding-top: 30px;
                 color: #fff;
                 font-weight: 300;
             }
-    
+
             input, label{
                 display: block;
             }
@@ -313,7 +314,7 @@ footer{
     p{
         display: inline;
     }
-    
+
     img{
         width: 22px;
         padding: 0 5px;
@@ -356,19 +357,19 @@ footer{
 
     main{
         padding: 40px;
-        
-        
+
+
         .bord{
             border: none;
             padding: 10px;
-    
+
             h1{
                 display: inline-block;
                 border-top: 1px solid #7c3901;
                 border-left: 1px solid #7c3901;
                 padding: 10px;
             }
-        
+
             p{
                 padding: 20px 10px 10px 10px;
                 border-bottom: 1px solid #7c3901;
@@ -380,16 +381,16 @@ footer{
 
     .card{
         padding: 100px 7% 0 7%;
-        
+
          .contain{
             grid-template-columns: repeat(2, 1fr);
             grid-gap: 20px;
-    
+
            .card-di{
                 border-radius: 5px;
 
                 .contin{
-    
+
                     h2{
                         font-size: 20px;
                     }
@@ -400,7 +401,7 @@ footer{
 
     .sect{
         background-size: 100% 100%;
-    
+
         div{
 
             h1{
@@ -420,7 +421,7 @@ footer{
                 }
             }
         }
-    }    
+    }
 }
 
 
@@ -430,7 +431,7 @@ footer{
     header{
         background-size: 100%;
         padding: 40px 70px 70px 70px;
-    
+
         nav{
 
             .two{
@@ -441,39 +442,39 @@ footer{
                 padding: 10px;
                 font-size: 1.5em;
             }
-    
+
             img{
                 display: none;
             }
         }
-    
+
         .hide{
             position: static;
             background-color: rgba(255, 255, 255, 0);
             font-size: 20px;
             display: block;
-    
+
             img{
                 display: none;
             }
-    
+
            ul{
                 display: flex;
                 place-content: space-between;
-        
+
                 a{
                     color: #fff;
                     padding: 10px;
                     transition: all 0.5s ease;
                 }
-    
+
                 a:hover{
                     color: #fff;
                     border: 1px solid #fff;
                 }
            }
         }
-    
+
         .bod{
             padding: 120px 0 40px 0;
 
@@ -481,18 +482,18 @@ footer{
                 font-size: 48px;
                 line-height: 60px;
 
-    
+
                 span{
                     font-size: 59px;
                 }
-            }   
+            }
         }
     }
 
     main{
         padding: 7%;
-        
-        
+
+
         .bord{
             padding: 10px;
             display: flex;
@@ -509,7 +510,7 @@ footer{
                        width: 30px;
                        padding: 7px;
                     }
-                }        
+                }
 
                 h1{
                     display: inline-block;
@@ -536,16 +537,16 @@ footer{
     .hot{
 
         padding-top: 0;
-    
+
         h1{
             padding: 0 0 3% 10%;
             font-size: 3.5em;
         }
-    
+
         .lead{
             grid-template-columns: repeat(4, 1fr);
             grid-auto-rows: 60%;
-    
+
             .icon{
                 font-size: 1em;
             }
@@ -567,7 +568,7 @@ footer{
             top: -5.5em;
             z-index: 1;
         }
-    
+
        div{
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -598,7 +599,7 @@ footer{
                 button{
                     background: rgb(255, 255, 255);
                     color: #7c3901;
-    
+
                     &:hover{
                         background: rgb(255, 255, 255, 0);
                         color: #fff;
@@ -613,20 +614,20 @@ footer{
 
     main{
         padding: 7% 12%;
-        
+
         .bord{
 
-            .bout:nth-child(1){  
-                
+            .bout:nth-child(1){
+
                 display: grid;
                 grid-template-rows: 93% 7%;
 
                 h1{
                     padding: 150px 0 350px 0;
-                    
+
                 }
             }
-        
+
             .bout:nth-child(2){
                 width: 50%;
                 border: none;
@@ -646,12 +647,12 @@ footer{
 
     .card{
         padding: 100px 12% 0 12%;
-        
+
          .contain{
             grid-template-columns: repeat(3, 1fr);
         }
     }
-    
+
     .sect{
 
         margin: 170px 0 0 0;
@@ -662,7 +663,7 @@ footer{
             left: 150px;
             top: -6em;
         }
-    
+
        div{
         grid-template-columns: repeat(2, 1fr);
 
