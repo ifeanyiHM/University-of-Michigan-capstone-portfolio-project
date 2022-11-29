@@ -1,4 +1,20 @@
 
+const header = document.getElementById("top");
+const nav = document.querySelector("nav");
+const navOptions = {
+  rootMargin: "-80px 0px 0px 0px"
+};
+const navScroll = (entries) => {
+  const entry= entries[0];
+  if (!entry.isIntersecting) {
+    nav.classList.add("navigation");
+  } else {
+    nav.classList.remove("navigation");
+  }
+}
+const navObserver = new IntersectionObserver(navScroll, navOptions);
+navObserver.observe(header);
+
 
 const menu = document.getElementById('1');
 const hide = document.getElementById('2');
