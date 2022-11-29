@@ -4,4 +4,4 @@ It was quite a challenging task because prior to working on this project, I have
 
 Trying to sketch responsive layouts with the use of Figma for the first time can be more challenging than developing the codes to turn them into an interactive webpage.
 
-At the end of the project, I came to an understanding that one can still do well, not exceptionally but quite remarkably in areas they do not flow easily and naturally. 
+At the end of the project, I came to an understanding that one can still do remarkably well in areas they do not flow easily and naturally. 
