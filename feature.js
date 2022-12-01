@@ -28,32 +28,16 @@ exit.addEventListener('click', function(){
     hide.style.display='none';
 });
 
-const back = document.querySelector('.back');
-back.addEventListener('click', function(){
-    hide.style.display = 'none';
+
+const back = document.querySelectorAll('.back');
+back.forEach((links) => {
+  links.addEventListener('click', function () {
+    const mq = window.matchMedia('(max-width: 899px)');
+    if (mq.matches) {
+      hide.style.display = 'none';
+    }
+  })
 });
-
-const back1 = document.querySelector('.back1');
-back1.addEventListener('click', function(){
-    hide.style.display = 'none';
-});
-
-const back2 = document.querySelector('.back2');
-back2.addEventListener('click', function(){
-    hide.style.display = 'none';
-});
-
-const back3 = document.querySelector('.back3');
-back3.addEventListener('click', function(){
-    hide.style.display = 'none';
-});
-
-const back4 = document.querySelector('.back4');
-back4.addEventListener('click', function(){
-    hide.style.display = 'none';
-});
-
-
 
 
 

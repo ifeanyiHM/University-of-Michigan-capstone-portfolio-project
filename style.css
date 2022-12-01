@@ -371,14 +371,18 @@ footer img:hover {
     display: flex;
     place-content: space-between;
   }
-  header nav .hide ul a {
+  header nav .hide ul li {
+    transition: 0.3s;
+  }
+  header nav .hide ul li a {
     color: #fff;
     padding: 10px;
-    transition: all 0.5s ease;
   }
-  header nav .hide ul a:hover {
+  header nav .hide ul li a:hover {
     color: #fff;
-    border: 1px solid #fff;
+  }
+  header nav .hide ul li:hover {
+    border-bottom: 1px solid #fff;
   }
   header nav .two {
     width: 50%;
