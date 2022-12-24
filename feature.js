@@ -79,3 +79,64 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+
+function showPage(page) {
+ 
+  document.querySelector(`#${page}`).style.display = 'block';
+}
+
+document.querySelectorAll('.display_page').forEach(btnn => {
+  btnn.onclick = function () {
+    showPage(this.dataset.page);
+
+    document.querySelectorAll('.hide_page').forEach(item => {
+      item.style.display = 'none'
+    })
+  }
+})
+
+function handleClick() {
+  //document.getElementById('btn_resume').style.display = 'inline_flex'
+
+  document.querySelectorAll('.hide_page').forEach(item => {
+    if (item.style.display === 'none') {
+      item.style.display = 'block'
+      
+      let resume = document.getElementById('btn_resume');
+      if (resume.style.display === 'block') {
+        resume.style.display = 'inline-flex'
+      }
+    }
+  })
+  document.querySelectorAll('.display_section').forEach(disp => {
+    disp.style.display = 'none'
+  });
+}
+
+function printMe() {
+  print();
+}
+
+const form = document.querySelector('form');
+const post = async(e) => {
+  e.preventDefault();
+
+  await fetch(form.action, {
+    method: "POST",
+    body: new FormData(document.querySelector('form')),
+  }).then(
+    response => response.json()
+  ).then((html) => {
+    document.querySelector('.body_alert').style.display = 'block';
+    let okayBtn = document.querySelector('.okay_btn');
+    okayBtn.addEventListener('click', () => {
+      window.location.replace('index.html')
+    });
+  });
+}
+form.addEventListener('submit', post);
+
+
+
+

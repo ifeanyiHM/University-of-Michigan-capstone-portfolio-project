@@ -8,13 +8,13 @@
     <!-- Font styles -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@200;300;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body id="body">
     <Header id="top">
-        <nav>
+        <nav onclick="handleClick()">
             <div class="one">
                 <h3>HM</h3>
             </div>
@@ -34,13 +34,17 @@
                 </div>
             </div>
         </nav>
-        <div class="bod">
+        <div class="bod hide_page">
             <h1>I'm Ifeanyi <br><span>Michael!</span></h1>
             <p>A Frontend Web Developer</p>
         </div>
     </Header>
+    <div class="display_page hide_page" id="btn_resume" data-page="resume">
+        <!-- <img src="icons/download.svg" alt="download"> -->
+        <p>View Resume</p>
+    </div>
 
-    <main id="about">
+    <main id="about" class="hide_page">
         <div class="bord">
             <div class="bout">
                 <h1>about</h1>
@@ -72,7 +76,7 @@
         </div>
     </main>
 
-    <section id="tools" class="hot fade">
+    <section id="tools" class="hot fade hide_page">
         <div class="skill">
             <h1>Tools</h1>
             <div class="lead">
@@ -112,7 +116,7 @@
         </div>
     </section>
 
-    <section id="works" class="card">
+    <section id="works" class="card hide_page">
         <h1>Projects</h1>
         <div class="contain" data-aos="fade-up">
           <div class="card-di">
@@ -143,32 +147,193 @@
               </div>
           </div>
        </div>
+       <p class="display_page" id="btn_works" data-aos="fade-out" data-page="all_works">see more...</p>
     </section>
 
-    <section id="contact" class="sect">
+    <section class="display_section" id="all_works">
+        <h1>Coming soon...</h1>
+    </section>
+
+    <section class="display_section" id="resume">
+        <button onclick="printMe()"><img src="icons/download.svg" alt="download cv">download CV</button>
+        <div class="cv_pdf">
+            <img class="imgg" src="images/ifeanyi.png" alt="resume">
+            <img src="images/michael.png" alt="resume">
+        </div>
+
+        <div class="container_cv">
+            <div class="introd">
+                <h1><span>IFEANYI</span>IHEME</h1>
+                <h3>FRONT-END DEVELOPER</h3>
+            </div>
+           <div class="gird">
+                <div class="cover_style">
+                    <img src="icons/cover.svg" alt="style">
+                    <img src="icons/cover.svg" alt="style">
+                    <img src="icons/cover.svg" alt="style">
+                </div>
+
+                <div class="grid_container">
+                    <div class="grid_border">
+                        <div class="flex_container">
+                            <img src="icons/phone.svg" alt="phone number">
+                            <p>+234 814 5663 725</p>
+                        </div>
+                        <div class="flex_container">
+                            <img src="icons/mail.svg" alt="email addresss">
+                            <p>iheme.ifeanyi@yahoo.com</p>
+                        </div>
+                        <div class="flex_container">
+                            <img src="icons/website.svg" alt="portfolio site">
+                            <p><a href="https://ifeanyimichael.vercel.app">ifeanyimichael.vercel.app</a></p>
+                        </div>
+                        <div class="flex_container fill_img">
+                            <img src="icons/github.svg" alt="github address">
+                            <p><a href="https://github.com/ifeanyiHM">github.com/ifeanyiHM</a></p>
+                        </div>
+                        <div class="flex_container fll">
+                            <img src="icons/address.svg" alt="address location">
+                            <p>Lagos Nigeria</p>
+                        </div>
+                       
+                    </div>  
+                    <div class="grid_border">
+                        <h2>PROFILE</h2>
+                        <P>A qualified Frontend developer with good understanding, proficiency
+                            and experience in basic programming languages, Responsive Design, API integration and frontend 
+                            libraries. Great communication and analytic skill, highly
+                            motivated, dedicated and apt in team playing.</P>
+                    </div>
+                    <div class="grid_border">
+                        <h2>SKILL</h2>
+                        <ul>
+                            <li>Responsive design</li>
+                            <li>API integration</li>
+                            <li>Documentation</li>
+                            <li>Version Control</li>
+                            <li>JavaScript / ReactJS</li>
+                            <li>Tailwind / Bootstrap</li>
+                            <li>HTML5 / CSS3</li>
+                        </ul>
+                    </div>
+                    <div class="grid_border">
+                        <h2>EXPERIENCE</h2>
+                        <div class="experience">
+                            <h4>FRONTEND DEVELOPER</h4>
+                            <P>HNG internship</P>
+                            <strong>2022</strong>
+                            <ul class="spec">
+                                <li>Created the client-side of a large web application alonside with a team of frontend developers.</li>
+                                <li>Implemented the approved works of the product designers in the teams in the frontend.</li>
+                                <li>Prepared reports and documentation of task carried out.</li>
+                            </ul>
+                        </div>
+                        <div class="experience">
+                            <h4>FRONTEND DEVELOPER</h4>
+                            <P>New Skill Tech - CCG</P>
+                            <strong>2022</strong>
+                            <ul>
+                                <li>Wesite design</li>
+                                <li>Responsive Layout</li>
+                                <li>Core functionalities</li>
+                            </ul>
+                        </div>
+                        <div class="experience">
+                            <h4>COMPANY MANAGER</h4>
+                            <P>OJEM Enterprise</P>
+                            <strong>2021</strong>
+                            <ul>
+                                <li>Helped launched a startup</li>
+                                <li>Company Management</li>
+                                <li>Managed Sales</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="grid_border">
+                        <h2>EDUCATION</h2>
+                        <div class="experience">
+                            <h4>SECONDARY SCHOOL</h4>
+                            <p>Gracewell Academy</p>
+                            <P>2005 - 2011</P>
+                        </div>
+                        <div class="experience">
+                            <h4>BACHELOR'S DEGREE</h4>
+                            <p>Obafemi Awolowo University</p>
+                            <P>2015 - 2019</P>
+                        </div>
+                        <div class="experience">
+                            <h4>Professional Certificate, Web Development, Online</h4>
+                            <p>University of Michigan</p>
+                            <P>2022</P>
+                        </div>
+                    </div>
+                    <div class="grid_border">
+                        <h2>HOBBIES</h2>
+                        <ul>
+                            <li>Writing</li>
+                            <li>Reading and Bookclubs</li>
+                            <li>Video Games</li>
+                            <li>Music Directing</li>
+                            <li>Travels</li>
+                            <li>Exercise</li>
+                            <li>Nat Geo Wild</li>
+                            <li>Volunteering and Community Involvement</li>
+                        </ul>
+                    </div>
+                    <div class="grid_border">
+                        <h2>LINSCENSE & CERTIFICATION.</h2>
+                        <div class="experience">
+                            <h4>WEB DEVELOPMENT & CODING SPECIALIZATION</h4>
+                            <p><strong>Credential id:</strong> 7J8K6VRFU7S8</p>
+                            <p><strong>Credential url:</strong> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/7J8K6VRFU7S8">Click here.</a></p>
+                        </div>
+                        <div class="experience">
+                            <h4>GOOGLE DATA ANALYTICS</h4>
+                            <p>Issued by: Coursera</p>
+                            <p><strong>Credential url:</strong> <a href="https://www.credly.com/badges/c9855c6a-cbe9-437c-961d-a73b2e87d3a5/public_url">Click here.</a></p>
+                        </div>
+                        <div class="experience">
+                            <h4>PROGRAMMING WITH JAVASCRIPT BY META</h4>
+                            <p><strong>Credential id:</strong> LEYFJU77JJUZ</p>
+                            <p><strong>Credential url:</strong> <a href="https://www.coursera.org/account/accomplishments/certificate/LEYFJU77JJUZ">Click here.</a></p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+       </div>
+    </section>
+
+    <section id="contact" class="sect hide_page">
         <div>
             <h1>Contact me</h1>
             <h1 id="cont">Contact me</h1>
-            <form action="submit">
+            <form action="https://sheetdb.io/api/v1/1ym2ggsrbw25c" method="post" required>
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="data[name]" id="name" required>
                 <label for="email">Email</label>
-                <input type="Email" name="email" id="email">
+                <input type="email" name=data[email] id="email" required>
                 <label for="address">Address</label>
-                <input type="text" name="address" id="address">
+                <input type="text" name=data[address] id="address">
                 <label for="message">Message</label>
-                <textarea name="message" id="message" cols="30" rows="3"></textarea>
+                <textarea name=data[message] id="message" cols="30" rows="3" required></textarea>
                 <button type="submit">SUBMIT</button>
             </form>
         </div>
     </section>
 
-    <footer>
+    <footer class="hide_page">
         <a href="https://twitter.com/ifeanyimichaell" target="_blank"><img src="./icons/twitter(1).svg" alt="a_link_to_twitter_profile"></a>
         <a href="https://www.linkedin.com/in/ifeanyihm/" target="_blank"><img src="./icons/linkedin(1).svg" alt="a_link_to_linkdin_profile"></a>
         <a href="https://github.com/ifeanyiHM" target="_blank"><img src="./icons/github(1).svg" alt="a_link_to_github_profile"></a>
         <p>HM</p>
     </footer>
+
+    <div class="body_alert">
+        <div class="modal_alert">
+            <p>Submitted sucessfully</p>
+            <button class="okay_btn">OK</button>
+        </div>
+    </div>
 
     <!-- scroll back up buttondd -->
     <a onclick="scrollMe()" id="scroll" href="#top"><img src="./icons/white-arrow.png" alt="scroll-back-up-button"></a>
