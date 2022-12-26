@@ -240,9 +240,8 @@ main .bord p::-webkit-scrollbar-thumb {
   color: rgb(245, 241, 241);
   font-size: 0.8em;
   font-weight: 600;
-  margin: -70px 270px 0 0;
+  margin: -70px 0 20px 30px;
   padding: 10px 30px;
-  float: right;
   cursor: pointer;
   border: 0;
 }
@@ -256,7 +255,7 @@ main .bord p::-webkit-scrollbar-thumb {
   width: 100%;
 }
 #resume .container_cv {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
   padding-top: 10px;
   background: #fff;
@@ -274,7 +273,7 @@ main .bord p::-webkit-scrollbar-thumb {
   margin: 30px 0;
 }
 #resume .container_cv .introd h1 {
-  font-size: 4.5em;
+  font-size: 3em;
   font-weight: 500;
   color: rgba(0, 0, 0, 0.8);
 }
@@ -290,23 +289,11 @@ main .bord p::-webkit-scrollbar-thumb {
   position: relative;
 }
 #resume .container_cv .gird .cover_style img {
-  position: absolute;
-}
-#resume .container_cv .gird .cover_style img:nth-child(1) {
-  left: 327px;
-  top: 299px;
-}
-#resume .container_cv .gird .cover_style img:nth-child(2) {
-  left: 327px;
-  top: 652px;
-}
-#resume .container_cv .gird .cover_style img:nth-child(3) {
-  left: 327px;
-  top: 1079px;
+  display: none;
 }
 #resume .container_cv .gird .grid_container {
   display: grid;
-  grid-template-columns: 40% 60%;
+  grid-template-columns: 45% 55%;
   background: #b6b0b0;
   grid-gap: 2px;
 }
@@ -328,9 +315,8 @@ main .bord p::-webkit-scrollbar-thumb {
   padding-right: 0;
 }
 #resume .container_cv .gird .grid_container .grid_border:nth-child(1) .flex_container {
-  display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 10px;
   padding-bottom: 20px;
 }
 #resume .container_cv .gird .grid_container .grid_border:nth-child(1) .flex_container img {
@@ -617,6 +603,15 @@ footer img:hover {
     font-size: 0.9em;
     padding: 10px 40px;
   }
+  #resume button {
+    margin: -70px 0 20px 5%;
+  }
+  #resume .container_cv {
+    width: 90%;
+  }
+  #resume .container_cv .introd h1 {
+    font-size: 4em;
+  }
   .sect {
     background-size: 100% 100%;
   }
@@ -751,6 +746,16 @@ footer img:hover {
   .card #btn_works {
     padding: 15px 50px;
   }
+  #resume button {
+    margin: -70px 15% 0 0;
+    float: right;
+  }
+  #resume .container_cv {
+    width: 70%;
+  }
+  #resume .container_cv .introd h1 {
+    font-size: 4.5em;
+  }
   .sect {
     margin: 250px 0 0 0;
     position: relative;
@@ -828,6 +833,28 @@ footer img:hover {
   }
   .card .contain {
     grid-template-columns: repeat(3, 1fr);
+  }
+  #resume button {
+    margin: -70px 20% 0 0;
+  }
+  #resume .container_cv {
+    width: 60%;
+  }
+  #resume .container_cv .gird .cover_style img {
+    position: absolute;
+    display: block;
+  }
+  #resume .container_cv .gird .cover_style img:nth-child(1) {
+    left: 44.8%;
+    top: 25.1%;
+  }
+  #resume .container_cv .gird .cover_style img:nth-child(2) {
+    left: 44.8%;
+    top: 46.7%;
+  }
+  #resume .container_cv .gird .cover_style img:nth-child(3) {
+    left: 44.8%;
+    top: 72.5%;
   }
   .sect::before {
     width: 160px;
