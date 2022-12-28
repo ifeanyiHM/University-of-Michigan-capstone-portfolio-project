@@ -128,6 +128,7 @@ main .bord p::-webkit-scrollbar-thumb {
 
 .hot {
   padding-top: 5%;
+  margin-bottom: 100px;
 }
 .hot h1 {
   padding: 0 0 5% 12%;
@@ -146,73 +147,85 @@ main .bord p::-webkit-scrollbar-thumb {
 }
 .hot img {
   width: 25%;
+  height: 50%;
 }
 
-.card {
+.card, #all_works {
   padding: 100px 40px 0 40px;
 }
-.card h1 {
+.card h1, #all_works h1 {
   font-size: 3em;
   font-family: "Playfair Display";
   font-weight: 400;
   padding-bottom: 30px;
 }
-.card .contain {
+.card .contain, #all_works .contain {
   display: grid;
 }
-.card .contain .card-di {
-  box-shadow: 0 8px 8px 0 rgba(0, 0, 0, 0.2);
+.card .contain .card-di, #all_works .contain .card-di {
+  box-shadow: 3px 3px 5px 0 rgba(111, 78, 55, 0.3), -3px -3px 5px 0 rgba(111, 78, 55, 0.3);
   width: 100%;
-  margin: 10px 0;
+  margin: 20px 0;
+  border-radius: 10px;
+  transition: 0.6s;
 }
-.card .contain .card-di .out {
+.card .contain .card-di .out_div .out, #all_works .contain .card-di .out_div .out {
   width: 100%;
+  border-radius: 10px 10px 0 0;
 }
-.card .contain .card-di .contin {
-  padding: 50px 20px;
+.card .contain .card-di .contin, #all_works .contain .card-di .contin {
+  padding: 10px 20px;
 }
-.card .contain .card-di .contin h2, .card .contain .card-di .contin h4 {
-  font-weight: 400;
-  padding-bottom: 10px;
+.card .contain .card-di .contin h2, #all_works .contain .card-di .contin h2 {
+  font-size: 1em;
+  font-weight: 500;
+  padding-bottom: 5px;
 }
-.card .contain .card-di .contin p {
-  font-size: 0.9em;
-  padding-bottom: 10px;
-}
-.card .contain .card-di .contin p a {
+.card .contain .card-di .contin h2 a, #all_works .contain .card-di .contin h2 a {
   text-decoration: none;
   color: #000;
 }
-.card .contain .card-di .contin p a:hover {
+.card .contain .card-di .contin h2 a:hover, #all_works .contain .card-di .contin h2 a:hover {
   text-decoration: underline;
 }
-.card .contain .card-di .contin .bot {
+.card .contain .card-di .contin p, #all_works .contain .card-di .contin p {
+  font-size: 0.8em;
+  padding-bottom: 5px;
+}
+.card .contain .card-di .contin p a, #all_works .contain .card-di .contin p a {
+  text-decoration: none;
+  color: #000;
+}
+.card .contain .card-di .contin p a:hover, #all_works .contain .card-di .contin p a:hover {
+  text-decoration: underline;
+}
+.card .contain .card-di .contin .bot, #all_works .contain .card-di .contin .bot {
   display: inline-block;
   padding: 4px 30px;
   border-radius: 5px;
-  margin-top: 20px;
+  margin: 10px 0;
   border: 1px solid #000;
   transition: 0.4s;
   font-size: 20px;
   text-decoration: none;
   color: #000;
 }
-.card .contain .card-di .contin .bot:hover {
+.card .contain .card-di .contin .bot:hover, #all_works .contain .card-di .contin .bot:hover {
   color: rgb(255, 255, 255);
   font-weight: 300;
   background: #000;
   border-radius: 0;
 }
-.card .contain .card-di .contin img {
+.card .contain .card-di .contin img, #all_works .contain .card-di .contin img {
   width: 28px;
   float: right;
   padding-top: 27px;
   transition: 0.3s;
 }
-.card .contain .card-di .contin img:hover {
-  width: 30px;
+.card .contain .card-di:hover, #all_works .contain .card-di:hover {
+  border-radius: 30px;
 }
-.card #btn_works {
+.card #btn_works, #all_works #btn_works {
   display: inline-flex;
   background: rgba(3, 2, 73, 0.8);
   color: rgb(245, 241, 241);
@@ -584,20 +597,17 @@ footer img:hover {
     border-right: 1px solid #7c3901;
     height: 100%;
   }
-  .card {
+  .hot {
+    margin-bottom: 150px;
+  }
+  .card, #all_works {
     padding: 100px 7% 0 7%;
   }
-  .card .contain {
+  .card .contain, #all_works .contain {
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 30px;
   }
-  .card .contain .card-di {
-    border-radius: 5px;
-  }
-  .card .contain .card-di .contin h2 {
-    font-size: 20px;
-  }
-  .card #btn_works {
+  .card #btn_works, #all_works #btn_works {
     font-size: 0.9em;
     padding: 10px 40px;
   }
@@ -851,10 +861,13 @@ footer img:hover {
     padding: 90px 20px 40px 20px;
     height: inherit;
   }
-  .card {
+  .hot {
+    margin-bottom: 200px;
+  }
+  .card, #all_works {
     padding: 100px 12% 0 12%;
   }
-  .card .contain {
+  .card .contain, #all_works .contain {
     grid-template-columns: repeat(3, 1fr);
   }
   #resume button {
