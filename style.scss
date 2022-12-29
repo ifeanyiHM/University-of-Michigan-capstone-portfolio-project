@@ -263,15 +263,15 @@ main{
                     padding-top: 27px;
                     transition: 0.3s;
 
-                    // &:hover{
-                    //     width: 30px;
-                    // }
+                    &:hover{
+                        width: 30px;
+                    }
                 }
             }
 
-            &:hover{
-                border-radius: 30px;
-            }
+            // &:hover{
+            //     width: 102%;
+            // }
         }
     }
 

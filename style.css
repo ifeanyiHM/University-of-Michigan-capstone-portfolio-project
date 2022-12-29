@@ -222,8 +222,8 @@ main .bord p::-webkit-scrollbar-thumb {
   padding-top: 27px;
   transition: 0.3s;
 }
-.card .contain .card-di:hover, #all_works .contain .card-di:hover {
-  border-radius: 30px;
+.card .contain .card-di .contin img:hover, #all_works .contain .card-di .contin img:hover {
+  width: 30px;
 }
 .card #btn_works, #all_works #btn_works {
   display: inline-flex;
