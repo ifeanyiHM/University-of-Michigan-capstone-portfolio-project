@@ -82,13 +82,13 @@ window.addEventListener("scroll", reveal);
 
 
 function showPage(page) {
- 
   document.querySelector(`#${page}`).style.display = 'block';
 }
 
 document.querySelectorAll('.display_page').forEach(btnn => {
   btnn.onclick = function () {
     showPage(this.dataset.page);
+    scrollFunction();
 
     document.querySelectorAll('.hide_page').forEach(item => {
       item.style.display = 'none'
