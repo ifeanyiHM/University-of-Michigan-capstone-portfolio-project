@@ -1,450 +1,864 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Capstone</title>
     <!-- Font styles -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@200;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
-    <link rel="stylesheet" href="style.css">
-</head>
-<body id="body">
-    <Header id="top">
-        <nav onclick="handleClick()">
-            <div class="one">
-                <h3>HM</h3>
-            </div>
-            <div class="two">
-                <div>
-                    <img id="1" src="icons/Group1.png" alt="Navigation-menu">
-                </div>
-                <div class="hide" id="2">
-                    <img id="3" src="icons/exit-menu.png" alt="exit-menu">
-                    <ul>
-                        <li><a class="back" href="#top">Home</a></li>
-                        <li><a class="back" href="#about">About</a></li>
-                        <li><a class="back" href="#tools">Tools</a></li>
-                        <li><a class="back" href="#works">Works</a></li>
-                        <li><a class="back" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
-        <div class="bod hide_page">
-            <h1>I'm Ifeanyi <br><span>Michael!</span></h1>
-            <p>A Frontend Web Developer</p>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="body">
+    <header id="top">
+      <nav onclick="handleClick()">
+        <div class="one">
+          <h3>HM</h3>
         </div>
-    </Header>
+        <div class="two">
+          <div>
+            <img id="1" src="icons/Group1.png" alt="Navigation-menu" />
+          </div>
+          <div class="hide" id="2">
+            <img id="3" src="icons/exit-menu.png" alt="exit-menu" />
+            <ul>
+              <li><a class="back" href="#top">Home</a></li>
+              <li><a class="back" href="#about">About</a></li>
+              <li><a class="back" href="#tools">Tools</a></li>
+              <li><a class="back" href="#works">Works</a></li>
+              <li><a class="back" href="#contact">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="bod hide_page">
+        <h1>I'm Ifeanyi <br /><span>Michael!</span></h1>
+        <p>A Frontend Web Developer</p>
+      </div>
+    </header>
     <div class="display_page hide_page" id="btn_resume" data-page="resume">
-        <!-- <img src="icons/download.svg" alt="download"> -->
-        <p>View Resume</p>
+      <!-- <img src="icons/download.svg" alt="download"> -->
+      <p>View Resume</p>
     </div>
 
     <main id="about" class="hide_page">
-        <div class="bord">
-            <div class="bout">
-                <h1>about</h1>
-                <div class="boar">
-                    <a href="https://twitter.com/ifeanyimichaell" target="_blank"><img src="./icons/twitter(1).svg" alt="a_link_to_twitter_profile"></a>
-                    <a href="https://www.linkedin.com/in/ifeanyihm/" target="_blank"><img src="./icons/linkedin(1).svg" alt="a_link_to_linkdin_profile"></a>
-                    <a href="https://github.com/ifeanyiHM" target="_blank"><img src="./icons/github(1).svg" alt="a_link_to_github_profile"></a>
-                </div>
-            </div>
-            <div class="bout">
-                <p>
-                    I'm Ifeanyi Iheme Michael, a Frontend-Web developer. I live in Lagos, Nigeria and I strive to build beautiful
-                     web applications through quality and sustainable code and user-centric design.<br><br>
-
-                    Since graduation from Obafemi Awolowo University, I have focused my professional career almost exclusively on front-end development.
-                     My experience in front-end development has helped me develop strong problem-solving skills. I have participated in several collaborations.
-                      open-source and personal projects.<br><br>
-                    
-                    I have earned Professional certifications in Web development from Google, Meta, and the University of Michigan with Coursera
-                     and have participated in an internship. I am open and committed to learning new things.<br><br>
-
-                    Activities such as reading, creating and arranging music, guitar playing, volunteering, etc, are non-coding productive activities
-                     I engage in when I am not coding. I am a team player eager to implement my skills and abilities productively in whatever capacity is provided.
-                </p>
-            </div>
+      <div class="bord">
+        <div class="bout">
+          <h1>about</h1>
+          <div class="boar">
+            <a href="https://twitter.com/ifeanyimichaell" target="_blank"
+              ><img
+                src="./icons/twitter(1).svg"
+                alt="a_link_to_twitter_profile"
+            /></a>
+            <a href="https://www.linkedin.com/in/ifeanyihm/" target="_blank"
+              ><img
+                src="./icons/linkedin(1).svg"
+                alt="a_link_to_linkdin_profile"
+            /></a>
+            <a href="https://github.com/ifeanyiHM" target="_blank"
+              ><img src="./icons/github(1).svg" alt="a_link_to_github_profile"
+            /></a>
+          </div>
         </div>
+        <div class="bout">
+          <p>
+            I'm Ifeanyi Iheme Michael, a passionate Front-end Engineer based in
+            Lagos, Nigeria. My goal is to build beautiful web applications using
+            quality code and a user-centric design approach.<br /><br />
+
+            After graduating from Obafemi Awolowo University, I've dedicated my
+            career to front-end development, honing my problem-solving skills
+            through various collaborations, open-source projects, and personal
+            endeavors. <br /><br />
+
+            I specialize in modern web technologies including React and
+            associated libraries, Sass, Tailwind CSS, and CSS Modules etc. I'm
+            proficient in API integration, which allows me to create dynamic and
+            user-friendly web experiences. My skills are up-to-date with the
+            latest web development trends, ensuring I can deliver high-quality
+            solutions.<br /><br />
+
+            I hold professional certifications in Front-end Development and Data
+            Analytics from Google, Meta, and the University of Michigan, all
+            acquired through Coursera, Udemy and verified on Credly. I've also
+            gained practical experience through an internship, and I remain
+            committed to continuous learning.<br /><br />
+
+            Beyond coding, I enjoy diverse interests, including reading, music
+            composition and arrangement, playing the guitar, and volunteering. I
+            thrive in a team environment and am enthusiastic about contributing
+            my skills effectively in any given role.
+          </p>
+        </div>
+      </div>
     </main>
 
     <section id="tools" class="hot fade hide_page">
-        <div class="skill">
-            <h1>Tools</h1>
-            <div class="lead">
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/html5.svg" alt="html5-icon">
-                    <p>HTML-5</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/css3.svg" alt="css3-icon">
-                    <p>CSS3</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/js.svg" alt="javascript-icon">
-                    <p>JavaScript</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/react.svg" alt="reacewt-icon">
-                    <p>React</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/bootstrap.svg" alt="bootstrap-icon">
-                    <p>bootstrap</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/git-alt.svg" alt="git-icon">
-                    <p>Git</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/github.svg" alt="github-icon">
-                    <p>github</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/figma.svg" alt="figma-icon">
-                    <p>Figma</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/tailwindcss-144.svg" alt="tailwind-icon">
-                    <p>Tailwind</p>
-                </div>
-                <div class="icon" data-aos="fade-out">
-                    <img src="./icons/sass.svg" alt="sass-icon">
-                    <p>Sass</p>
-                </div>
-            </div>
+      <div class="skill">
+        <h1>Tools</h1>
+        <div class="lead">
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/html5.svg" alt="html5-icon" />
+            <p>HTML-5</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/css3.svg" alt="css3-icon" />
+            <p>CSS3</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/js.svg" alt="javascript-icon" />
+            <p>JavaScript</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/react.svg" alt="reacewt-icon" />
+            <p>React</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/bootstrap.svg" alt="bootstrap-icon" />
+            <p>bootstrap</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/git-alt.svg" alt="git-icon" />
+            <p>Git</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/github.svg" alt="github-icon" />
+            <p>github</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/figma.svg" alt="figma-icon" />
+            <p>Figma</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/tailwindcss-144.svg" alt="tailwind-icon" />
+            <p>Tailwind</p>
+          </div>
+          <div class="icon" data-aos="fade-out">
+            <img src="./icons/sass.svg" alt="sass-icon" />
+            <p>Sass</p>
+          </div>
         </div>
+      </div>
     </section>
 
     <section id="works" class="card hide_page">
-        <h1>Projects</h1>
-        <div class="contain">
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://ifeanyihm.github.io/Mailchimp_landing_page/" target="_blank"><img class="out" src="./images/mailchimp.png" alt="mailchimp clone"></a>
-                </div>
-                <div class="contin">
-                    <h2>CLONED - <a href="https://mailchimp.com/grow-with-mailchimp/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acq_Alpha&gclid=CjwKCAiAksyNBhAPEiwAlDBeLHHwgN-lzYcxzo2iOZaidfEC0z-d-iARIvn2N6O6lUewvQ1mw3TrNRoC72sQAvD_BwE&gclsrc=aw.ds" target="_blank">MAILCHIMP'S LP</a></h2>
-                    <p>A responsive webpage for mobile and desktop device, a clone of <a href="https://mailchimp.com/grow-with-mailchimp/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acq_Alpha&gclid=CjwKCAiAksyNBhAPEiwAlDBeLHHwgN-lzYcxzo2iOZaidfEC0z-d-iARIvn2N6O6lUewvQ1mw3TrNRoC72sQAvD_BwE&gclsrc=aw.ds" target="_blank">MAILCHIMP.</a> landing page</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/Mailchimp_landing_page/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/Mailchimp_landing_page" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+      <h1>Projects</h1>
+      <div class="contain">
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://notal.vercel.app/" target="_blank"
+              ><img class="out" src="./images/notal.png" alt="notal app"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>NOTAL</h2>
+            <p>
+              A personal journal to capture and reflect on my daily experiences
+              and thoughts.
+            </p>
+            <br /><br />
+            <div class="icn">
+              <a class="bot" href="https://notal.vercel.app/" target="_blank"
+                >Live</a
+              >
+              <a href="https://github.com/ifeanyiHM/NOTAL" target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://ifeanyihm.github.io/Metabnb/"target="-blank" ><img class="out" src="./images/metabnb.png" alt="A-screenshot-of-metabnb"></a>
-                </div>
-                <div class="contin">
-                    <h2>METABNB</h2>
-                    <p>This app provides a platform in the Meta space where vacation homes and condos are purchased or rented like Airbnb.</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/Metabnb/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/Metabnb" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://interest-gamma.vercel.app/" target="_blank"
+              ><img
+                class="out"
+                src="./images/interest.png"
+                alt="A-screenshot-of-interest"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>INTEREST</h2>
+            <p>
+              A
+              <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+              app clone that allows users to discover, save, and share inspiring
+              images and ideas.
+            </p>
+            <br />
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://interest-gamma.vercel.app/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/Pinterest-Clone"
+                target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href=""><img class="out" src="./images/portfolio.png" alt="A-capstone-project-screenshot"></a>
-                </div>
-                <div class="contin">
-                    <h2>PROJECT PORTFOLIO</h2>
-                    <p>A responsive single page application for mobile, desktop and tablet device. (A capstone project portfolio)</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/University-of-Michigan-capstone-portfolio-project/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/University-of-Michigan-capstone-portfolio-project"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://dashboard-theta-hazel.vercel.app/"
+              ><img class="out" src="./images/dashboard.png" alt="A dashboard"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>A MATERIAL DASHBOARD</h2>
+            <p>
+              A material dashboard app clone that provides users with an
+              intuitive interface for managing and visualizing data and
+              information.
+              <a
+                href="https://demos.creative-tim.com/material-dashboard/pages/dashboard.html"
+                >original dashboard</a
+              >
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://dashboard-theta-hazel.vercel.app/"
+                target="_blank"
+                >Live</a
+              >
+              <a href="https://github.com/ifeanyiHM/Dashboard"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-       </div>
-       <p class="display_page" id="btn_works" data-aos="fade-out" data-page="all_works">see more...</p>
+          </div>
+        </div>
+      </div>
+      <p
+        class="display_page"
+        id="btn_works"
+        data-aos="fade-out"
+        data-page="all_works"
+      >
+        see more...
+      </p>
     </section>
 
     <section class="display_section" id="all_works">
-        <h1>Projects</h1>
-        <div class="contain">
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://ifeanyihm.github.io/Mailchimp_landing_page/" target="_blank"><img class="out" src="./images/mailchimp.png" alt="mailchimp clone"></a>
-                </div>
-                <div class="contin">
-                    <h2>CLONED - <a href="https://mailchimp.com/grow-with-mailchimp/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acq_Alpha&gclid=CjwKCAiAksyNBhAPEiwAlDBeLHHwgN-lzYcxzo2iOZaidfEC0z-d-iARIvn2N6O6lUewvQ1mw3TrNRoC72sQAvD_BwE&gclsrc=aw.ds" target="_blank">MAILCHIMP'S LP</a></h2>
-                    <p>A responsive webpage for mobile and desktop device, a clone of <a href="https://mailchimp.com/grow-with-mailchimp/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acq_Alpha&gclid=CjwKCAiAksyNBhAPEiwAlDBeLHHwgN-lzYcxzo2iOZaidfEC0z-d-iARIvn2N6O6lUewvQ1mw3TrNRoC72sQAvD_BwE&gclsrc=aw.ds" target="_blank">MAILCHIMP.</a> landing page</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/Mailchimp_landing_page/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/Mailchimp_landing_page" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+      <h1>Projects</h1>
+      <div class="contain">
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://notal.vercel.app/" target="_blank"
+              ><img class="out" src="./images/notal.png" alt="notal app"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>NOTAL</h2>
+            <p>
+              A personal journal to capture and reflect on my daily experiences
+              and thoughts.
+            </p>
+            <br /><br />
+            <div class="icn">
+              <a class="bot" href="https://notal.vercel.app/" target="_blank"
+                >Live</a
+              >
+              <a href="https://github.com/ifeanyiHM/NOTAL" target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://ifeanyihm.github.io/Metabnb/"target="-blank" ><img class="out" src="./images/metabnb.png" alt="A-screenshot-of-metabnb"></a>
-                </div>
-                <div class="contin">
-                    <h2>METABNB</h2>
-                    <p>This app provides a platform in the Meta space where vacation homes and condos are purchased or rented like Airbnb.</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/Metabnb/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/Metabnb" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://interest-gamma.vercel.app/" target="_blank"
+              ><img
+                class="out"
+                src="./images/interest.png"
+                alt="A-screenshot-of-interest"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>INTEREST</h2>
+            <p>
+              A
+              <a href="https://www.pinterest.com/" target="_blank">Pinterest</a>
+              app clone that allows users to discover, save, and share inspiring
+              images and ideas.
+            </p>
+            <br />
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://interest-gamma.vercel.app/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/Pinterest-Clone"
+                target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href=""><img class="out" src="./images/portfolio.png" alt="A-capstone-project-screenshot"></a>
-                </div>
-                <div class="contin">
-                    <h2>PROJECT PORTFOLIO</h2>
-                    <p>A responsive single page application for mobile, desktop and tablet device. (A capstone project portfolio)</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/University-of-Michigan-capstone-portfolio-project/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/University-of-Michigan-capstone-portfolio-project"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://dashboard-theta-hazel.vercel.app/"
+              ><img class="out" src="./images/dashboard.png" alt="A dashboard"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>A MATERIAL DASHBOARD</h2>
+            <p>
+              A material dashboard app clone that provides users with an
+              intuitive interface for managing and visualizing data and
+              information.
+              <a
+                href="https://demos.creative-tim.com/material-dashboard/pages/dashboard.html"
+                >original dashboard</a
+              >
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://dashboard-theta-hazel.vercel.app/"
+                target="_blank"
+                >Live</a
+              >
+              <a href="https://github.com/ifeanyiHM/Dashboard"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://new-skill-tech.vercel.app/" target="_blank"><img class="out" src="./images/contact.png" alt="A-screenshot-of-the-contact-app"></a>
-                </div>
-                <div class="contin">
-                    <h2>A CONTACT APP</h2>
-                    <p>This app provides the ability to create, store, edit, save and delete contact.</p>
-                    <a class="bot" href="https://new-skill-tech.vercel.app/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/NewSkillTech" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a
+              href="https://ifeanyihm.github.io/Mailchimp_landing_page/"
+              target="_blank"
+              ><img
+                class="out"
+                src="./images/mailchimp.png"
+                alt="mailchimp clone"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>
+              CLONED -
+              <a
+                href="https://mailchimp.com/grow-with-mailchimp/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acq_Alpha&gclid=CjwKCAiAksyNBhAPEiwAlDBeLHHwgN-lzYcxzo2iOZaidfEC0z-d-iARIvn2N6O6lUewvQ1mw3TrNRoC72sQAvD_BwE&gclsrc=aw.ds"
+                target="_blank"
+                >MAILCHIMP'S LP</a
+              >
+            </h2>
+            <p>
+              A responsive webpage for mobile and desktop device, a clone of
+              <a
+                href="https://mailchimp.com/grow-with-mailchimp/?ds_c=3Q_AOC_Google_Search_US_EN_Brand_Acq_Alpha&gclid=CjwKCAiAksyNBhAPEiwAlDBeLHHwgN-lzYcxzo2iOZaidfEC0z-d-iARIvn2N6O6lUewvQ1mw3TrNRoC72sQAvD_BwE&gclsrc=aw.ds"
+                target="_blank"
+                >MAILCHIMP.</a
+              >
+              landing page
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://ifeanyihm.github.io/Mailchimp_landing_page/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/Mailchimp_landing_page"
+                target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://ifeanyihm.github.io/A-React-calculator-app/" target="_blank"><img class="out" src="./images/calculator.png" alt="A-screenshot-of-the-calculator-app"></a>
-                </div>
-                <div class="contin">
-                    <h2>A CALCULATOR APP</h2>
-                    <p>A calculator app that carries out the basic calculator functions.</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/A-React-calculator-app/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/A-React-calculator-app" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://ifeanyihm.github.io/Metabnb/" target="-blank"
+              ><img
+                class="out"
+                src="./images/metabnb.png"
+                alt="A-screenshot-of-metabnb"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>METABNB</h2>
+            <p>
+              This app provides a platform in the Meta space where vacation
+              homes and condos are purchased or rented like Airbnb.
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://ifeanyihm.github.io/Metabnb/"
+                target="_blank"
+                >Live</a
+              >
+              <a href="https://github.com/ifeanyiHM/Metabnb" target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://ifeanyihm.github.io/Slack-HNG9-Stage1-task-/" target="_blank"><img class="out" src="./images/linktree.png" alt="A-screenshot-of-the-app"></a>
-                </div>
-                <div class="contin">
-                    <h2>A LINKTREE LIKE APP</h2>
-                    <p>This app allows you to refrence different landing page.</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/Slack-HNG9-Stage1-task-/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/Slack-HNG9-Stage1-task-" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href=""
+              ><img
+                class="out"
+                src="./images/portfolio.png"
+                alt="A-capstone-project-screenshot"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>PROJECT PORTFOLIO</h2>
+            <p>
+              A responsive single page application for mobile, desktop and
+              tablet device. (A capstone project portfolio)
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://ifeanyihm.github.io/University-of-Michigan-capstone-portfolio-project/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/University-of-Michigan-capstone-portfolio-project"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://ifeanyihm.github.io/My-First-Project/" target="_blank"><img class="out" src="./images/portr.png" alt="A-screenshot-of-my-first-project"></a>
-                </div>
-                <div class="contin">
-                    <h2>CLONED WEBPAGE - <a href="https://gomycode.com/NG-EN/store" target="_blank">GOMYCODE</a></h2>
-                    <p>A responsive webpage for mobile and desktop device cloned from <a href="https://gomycode.com/NG-EN/store" target="_blank">GOMYCODE</a> IT instute website</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/My-First-Project/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/My-First-Project" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://new-skill-tech.vercel.app/" target="_blank"
+              ><img
+                class="out"
+                src="./images/contact.png"
+                alt="A-screenshot-of-the-contact-app"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>A CONTACT APP</h2>
+            <p>
+              This app provides the ability to create, store, edit, save and
+              delete contact.
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://new-skill-tech.vercel.app/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/NewSkillTech"
+                target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-            <div class="card-di" data-aos="fade-up">
-                <div class="out_div">
-                    <a href="https://ifeanyihm.github.io/My-Second-Project/"><img class="out" src="./images/portb.png" alt="A-screenshot-of-my-second-project"></a>
-                </div>
-                <div class="contin">
-                    <h2>CLONED WEBPAGE - <a href="https://www.london.ac.uk/applications/funding-your-study#block-studentinformation-menu" target="_blank">UOL</a></h2>
-                    <p>A three layout responsive webpage cloned from the <a href="https://www.london.ac.uk/applications/funding-your-study#block-studentinformation-menu" target="_blank">UNIVERSITY OF LONDON</a> website.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</p>
-                    <a class="bot" href="https://ifeanyihm.github.io/My-Second-Project/" target="_blank">Live</a>
-                    <a href="https://github.com/ifeanyiHM/My-Second-Project" target="_blank"><img src="icons/github.svg" alt="a-link-to-the-source-code"></a>
-                </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a
+              href="https://ifeanyihm.github.io/A-React-calculator-app/"
+              target="_blank"
+              ><img
+                class="out"
+                src="./images/calculator.png"
+                alt="A-screenshot-of-the-calculator-app"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>A CALCULATOR APP</h2>
+            <p>
+              A calculator app that carries out the basic calculator functions.
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://ifeanyihm.github.io/A-React-calculator-app/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/A-React-calculator-app"
+                target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
             </div>
-       </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a
+              href="https://ifeanyihm.github.io/Slack-HNG9-Stage1-task-/"
+              target="_blank"
+              ><img
+                class="out"
+                src="./images/linktree.png"
+                alt="A-screenshot-of-the-app"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>A LINKTREE LIKE APP</h2>
+            <p>This app allows you to refrence different landing page.</p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://ifeanyihm.github.io/Slack-HNG9-Stage1-task-/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/Slack-HNG9-Stage1-task-"
+                target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a
+              href="https://ifeanyihm.github.io/My-First-Project/"
+              target="_blank"
+              ><img
+                class="out"
+                src="./images/portr.png"
+                alt="A-screenshot-of-my-first-project"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>
+              CLONED WEBPAGE -
+              <a href="https://gomycode.com/NG-EN/store" target="_blank"
+                >GOMYCODE</a
+              >
+            </h2>
+            <p>
+              A responsive webpage for mobile and desktop device cloned from
+              <a href="https://gomycode.com/NG-EN/store" target="_blank"
+                >GOMYCODE</a
+              >
+              IT instute website
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://ifeanyihm.github.io/My-First-Project/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/My-First-Project"
+                target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-di" data-aos="fade-up">
+          <div class="out_div">
+            <a href="https://ifeanyihm.github.io/My-Second-Project/"
+              ><img
+                class="out"
+                src="./images/portb.png"
+                alt="A-screenshot-of-my-second-project"
+            /></a>
+          </div>
+          <div class="contin">
+            <h2>
+              CLONED WEBPAGE -
+              <a
+                href="https://www.london.ac.uk/applications/funding-your-study#block-studentinformation-menu"
+                target="_blank"
+                >UOL</a
+              >
+            </h2>
+            <p>
+              A three layout responsive webpage cloned from the
+              <a
+                href="https://www.london.ac.uk/applications/funding-your-study#block-studentinformation-menu"
+                target="_blank"
+                >UNIVERSITY OF LONDON</a
+              >
+              website.&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+            </p>
+            <div class="icn">
+              <a
+                class="bot"
+                href="https://ifeanyihm.github.io/My-Second-Project/"
+                target="_blank"
+                >Live</a
+              >
+              <a
+                href="https://github.com/ifeanyiHM/My-Second-Project"
+                target="_blank"
+                ><img src="icons/github.svg" alt="a-link-to-the-source-code"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="display_section" id="resume">
-        <button onclick="printMe()"><img src="icons/download.svg" alt="download cv">download CV</button>
-        <div class="cv_pdf">
-            <img class="imgg" src="images/ifeanyi.png" alt="resume">
-            <img src="images/michael.png" alt="resume">
+      <button onclick="printMe()">
+        <img src="icons/download.svg" alt="download cv" />download CV
+      </button>
+      <div class="cv_pdf">
+        <img class="imgg" src="images/ifeanyi.png" alt="resume" />
+        <img src="images/michael.png" alt="resume" />
+      </div>
+
+      <div class="container_cv">
+        <div class="introd">
+          <h1><span>IFEANYI</span>IHEME</h1>
+          <h3>FRONT-END DEVELOPER</h3>
         </div>
+        <div class="gird">
+          <div class="cover_style">
+            <img src="icons/cover.svg" alt="style" />
+            <img src="icons/cover.svg" alt="style" />
+            <img src="icons/cover.svg" alt="style" />
+          </div>
 
-        <div class="container_cv">
-            <div class="introd">
-                <h1><span>IFEANYI</span>IHEME</h1>
-                <h3>FRONT-END DEVELOPER</h3>
+          <div class="grid_container">
+            <div class="grid_border">
+              <div class="flex_container">
+                <img src="icons/phone.svg" alt="phone number" />
+                <p>+234 814 5663 725</p>
+              </div>
+              <div class="flex_container">
+                <img src="icons/mail.svg" alt="email addresss" />
+                <p>iheme.ifeanyi@yahoo.com</p>
+              </div>
+              <div class="flex_container">
+                <img src="icons/website.svg" alt="portfolio site" />
+                <p>
+                  <a href="https://ifeanyimichael.vercel.app"
+                    >ifeanyimichael.vercel.app</a
+                  >
+                </p>
+              </div>
+              <div class="flex_container fill_img">
+                <img src="icons/github.svg" alt="github address" />
+                <p>
+                  <a href="https://github.com/ifeanyiHM"
+                    >github.com/ifeanyiHM</a
+                  >
+                </p>
+              </div>
+              <div class="flex_container fll">
+                <img src="icons/address.svg" alt="address location" />
+                <p>Lagos Nigeria</p>
+              </div>
             </div>
-           <div class="gird">
-                <div class="cover_style">
-                    <img src="icons/cover.svg" alt="style">
-                    <img src="icons/cover.svg" alt="style">
-                    <img src="icons/cover.svg" alt="style">
-                </div>
-
-                <div class="grid_container">
-                    <div class="grid_border">
-                        <div class="flex_container">
-                            <img src="icons/phone.svg" alt="phone number">
-                            <p>+234 814 5663 725</p>
-                        </div>
-                        <div class="flex_container">
-                            <img src="icons/mail.svg" alt="email addresss">
-                            <p>iheme.ifeanyi@yahoo.com</p>
-                        </div>
-                        <div class="flex_container">
-                            <img src="icons/website.svg" alt="portfolio site">
-                            <p><a href="https://ifeanyimichael.vercel.app">ifeanyimichael.vercel.app</a></p>
-                        </div>
-                        <div class="flex_container fill_img">
-                            <img src="icons/github.svg" alt="github address">
-                            <p><a href="https://github.com/ifeanyiHM">github.com/ifeanyiHM</a></p>
-                        </div>
-                        <div class="flex_container fll">
-                            <img src="icons/address.svg" alt="address location">
-                            <p>Lagos Nigeria</p>
-                        </div>
-                       
-                    </div>  
-                    <div class="grid_border">
-                        <h2>PROFILE</h2>
-                        <P>A qualified Frontend developer with good understanding, proficiency
-                            and experience in basic programming languages, Responsive Design, API integration and frontend 
-                            libraries. Great communication and analytic skill, highly
-                            motivated, dedicated and apt in team playing.</P>
-                    </div>
-                    <div class="grid_border">
-                        <h2>SKILL</h2>
-                        <ul>
-                            <li>Responsive design</li>
-                            <li>API integration</li>
-                            <li>Documentation</li>
-                            <li>Version Control</li>
-                            <li>JavaScript / ReactJS</li>
-                            <li>Tailwind / Bootstrap</li>
-                            <li>HTML5 / CSS3</li>
-                        </ul>
-                    </div>
-                    <div class="grid_border">
-                        <h2>EXPERIENCE</h2>
-                        <div class="experience">
-                            <h4>FRONTEND DEVELOPER</h4>
-                            <P>HNG internship</P>
-                            <strong>2022</strong>
-                            <ul class="spec">
-                                <li>Created the client-side of a large web application alonside with a team of frontend developers.</li>
-                                <li>Implemented the approved works of the product designers in the teams in the frontend.</li>
-                                <li>Prepared reports and documentation of task carried out.</li>
-                            </ul>
-                        </div>
-                        <div class="experience">
-                            <h4>FRONTEND DEVELOPER</h4>
-                            <P>New Skill Tech - CCG</P>
-                            <strong>2022</strong>
-                            <ul>
-                                <li>Wesite design</li>
-                                <li>Responsive Layout</li>
-                                <li>Core functionalities</li>
-                            </ul>
-                        </div>
-                        <div class="experience">
-                            <h4>COMPANY MANAGER</h4>
-                            <P>OJEM Enterprise</P>
-                            <strong>2021</strong>
-                            <ul>
-                                <li>Helped launched a startup</li>
-                                <li>Company Management</li>
-                                <li>Managed Sales</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="grid_border">
-                        <h2>EDUCATION</h2>
-                        <div class="experience">
-                            <h4>SECONDARY SCHOOL</h4>
-                            <p>Gracewell Academy</p>
-                            <P>2005 - 2011</P>
-                        </div>
-                        <div class="experience">
-                            <h4>BACHELOR'S DEGREE</h4>
-                            <p>Obafemi Awolowo University</p>
-                            <P>2015 - 2019</P>
-                        </div>
-                        <div class="experience">
-                            <h4>Professional Certificate, Web Development, Online</h4>
-                            <p>University of Michigan</p>
-                            <P>2022</P>
-                        </div>
-                    </div>
-                    <div class="grid_border">
-                        <h2>HOBBIES</h2>
-                        <ul>
-                            <li>Writing</li>
-                            <li>Reading and Bookclubs</li>
-                            <li>Video Games</li>
-                            <li>Music Directing</li>
-                            <li>Travels</li>
-                            <li>Exercise</li>
-                            <li>Nat Geo Wild</li>
-                            <li>Volunteering and Community Involvement</li>
-                        </ul>
-                    </div>
-                    <div class="grid_border">
-                        <h2>LINSCENSE & CERTIFICATION.</h2>
-                        <div class="experience">
-                            <h4>WEB DEVELOPMENT & CODING SPECIALIZATION</h4>
-                            <p><strong>Credential id:</strong> 7J8K6VRFU7S8</p>
-                            <p><strong>Credential url:</strong> <a href="https://www.coursera.org/account/accomplishments/specialization/certificate/7J8K6VRFU7S8">Click here.</a></p>
-                        </div>
-                        <div class="experience">
-                            <h4>GOOGLE DATA ANALYTICS</h4>
-                            <p>Issued by: Coursera</p>
-                            <p><strong>Credential url:</strong> <a href="https://www.credly.com/badges/c9855c6a-cbe9-437c-961d-a73b2e87d3a5/public_url">Click here.</a></p>
-                        </div>
-                        <div class="experience">
-                            <h4>PROGRAMMING WITH JAVASCRIPT BY META</h4>
-                            <p><strong>Credential id:</strong> LEYFJU77JJUZ</p>
-                            <p><strong>Credential url:</strong> <a href="https://www.coursera.org/account/accomplishments/certificate/LEYFJU77JJUZ">Click here.</a></p>
-                        </div>
-                    </div>
-                </div>
-           </div>
-       </div>
+            <div class="grid_border">
+              <h2>PROFILE</h2>
+              <p>
+                A qualified Frontend developer with good understanding,
+                proficiency and experience in basic programming languages,
+                Responsive Design, API integration and frontend libraries. Great
+                communication and analytic skill, highly motivated, dedicated
+                and apt in team playing.
+              </p>
+            </div>
+            <div class="grid_border">
+              <h2>SKILL</h2>
+              <ul>
+                <li>Responsive design</li>
+                <li>API integration</li>
+                <li>Documentation</li>
+                <li>Version Control</li>
+                <li>JavaScript / ReactJS</li>
+                <li>Tailwind / Bootstrap</li>
+                <li>HTML5 / CSS3</li>
+              </ul>
+            </div>
+            <div class="grid_border">
+              <h2>EXPERIENCE</h2>
+              <div class="experience">
+                <h4>FRONTEND DEVELOPER</h4>
+                <p>HNG internship</p>
+                <strong>2022</strong>
+                <ul class="spec">
+                  <li>
+                    Created the client-side of a large web application alonside
+                    with a team of frontend developers.
+                  </li>
+                  <li>
+                    Implemented the approved works of the product designers in
+                    the teams in the frontend.
+                  </li>
+                  <li>
+                    Prepared reports and documentation of task carried out.
+                  </li>
+                </ul>
+              </div>
+              <div class="experience">
+                <h4>FRONTEND DEVELOPER</h4>
+                <p>New Skill Tech - CCG</p>
+                <strong>2022</strong>
+                <ul>
+                  <li>Wesite design</li>
+                  <li>Responsive Layout</li>
+                  <li>Core functionalities</li>
+                </ul>
+              </div>
+              <div class="experience">
+                <h4>COMPANY MANAGER</h4>
+                <p>OJEM Enterprise</p>
+                <strong>2021</strong>
+                <ul>
+                  <li>Helped launched a startup</li>
+                  <li>Company Management</li>
+                  <li>Managed Sales</li>
+                </ul>
+              </div>
+            </div>
+            <div class="grid_border">
+              <h2>EDUCATION</h2>
+              <div class="experience">
+                <h4>SECONDARY SCHOOL</h4>
+                <p>Gracewell Academy</p>
+                <p>2005 - 2011</p>
+              </div>
+              <div class="experience">
+                <h4>BACHELOR'S DEGREE</h4>
+                <p>Obafemi Awolowo University</p>
+                <p>2015 - 2019</p>
+              </div>
+              <div class="experience">
+                <h4>Professional Certificate, Web Development, Online</h4>
+                <p>University of Michigan</p>
+                <p>2022</p>
+              </div>
+            </div>
+            <div class="grid_border">
+              <h2>HOBBIES</h2>
+              <ul>
+                <li>Writing</li>
+                <li>Reading and Bookclubs</li>
+                <li>Video Games</li>
+                <li>Music Directing</li>
+                <li>Travels</li>
+                <li>Exercise</li>
+                <li>Nat Geo Wild</li>
+                <li>Volunteering and Community Involvement</li>
+              </ul>
+            </div>
+            <div class="grid_border">
+              <h2>LINSCENSE & CERTIFICATION.</h2>
+              <div class="experience">
+                <h4>WEB DEVELOPMENT & CODING SPECIALIZATION</h4>
+                <p><strong>Credential id:</strong> 7J8K6VRFU7S8</p>
+                <p>
+                  <strong>Credential url:</strong>
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/specialization/certificate/7J8K6VRFU7S8"
+                    >Click here.</a
+                  >
+                </p>
+              </div>
+              <div class="experience">
+                <h4>GOOGLE DATA ANALYTICS</h4>
+                <p>Issued by: Coursera</p>
+                <p>
+                  <strong>Credential url:</strong>
+                  <a
+                    href="https://www.credly.com/badges/c9855c6a-cbe9-437c-961d-a73b2e87d3a5/public_url"
+                    >Click here.</a
+                  >
+                </p>
+              </div>
+              <div class="experience">
+                <h4>PROGRAMMING WITH JAVASCRIPT BY META</h4>
+                <p><strong>Credential id:</strong> LEYFJU77JJUZ</p>
+                <p>
+                  <strong>Credential url:</strong>
+                  <a
+                    href="https://www.coursera.org/account/accomplishments/certificate/LEYFJU77JJUZ"
+                    >Click here.</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section id="contact" class="sect hide_page">
-        <div>
-            <h1>Contact me</h1>
-            <h1 id="cont">Contact me</h1>
-            <form action="https://sheetdb.io/api/v1/1ym2ggsrbw25c" method="post" required>
-                <label for="name">Name</label>
-                <input type="text" name="data[name]" id="name" required>
-                <label for="email">Email</label>
-                <input type="email" name=data[email] id="email" required>
-                <label for="address">Address</label>
-                <input type="text" name=data[address] id="address">
-                <label for="message">Message</label>
-                <textarea name=data[message] id="message" cols="30" rows="3" required></textarea>
-                <button type="submit">SUBMIT</button>
-            </form>
-        </div>
+      <div>
+        <h1>Contact me</h1>
+        <h1 id="cont">Contact me</h1>
+        <form
+          action="https://sheetdb.io/api/v1/1ym2ggsrbw25c"
+          method="post"
+          required
+        >
+          <label for="name">Name</label>
+          <input type="text" name="data[name]" id="name" required />
+          <label for="email">Email</label>
+          <input type="email" name="data[email]" id="email" required />
+          <label for="address">Address</label>
+          <input type="text" name="data[address]" id="address" />
+          <label for="message">Message</label>
+          <textarea
+            name="data[message]"
+            id="message"
+            cols="30"
+            rows="3"
+            required
+          ></textarea>
+          <button type="submit">SUBMIT</button>
+        </form>
+      </div>
     </section>
 
     <footer class="hide_page">
-        <a href="https://twitter.com/ifeanyimichaell" target="_blank"><img src="./icons/twitter(1).svg" alt="a_link_to_twitter_profile"></a>
-        <a href="https://www.linkedin.com/in/ifeanyihm/" target="_blank"><img src="./icons/linkedin(1).svg" alt="a_link_to_linkdin_profile"></a>
-        <a href="https://github.com/ifeanyiHM" target="_blank"><img src="./icons/github(1).svg" alt="a_link_to_github_profile"></a>
-        <p>HM</p>
+      <a href="https://twitter.com/ifeanyimichaell" target="_blank"
+        ><img src="./icons/twitter(1).svg" alt="a_link_to_twitter_profile"
+      /></a>
+      <a href="https://www.linkedin.com/in/ifeanyihm/" target="_blank"
+        ><img src="./icons/linkedin(1).svg" alt="a_link_to_linkdin_profile"
+      /></a>
+      <a href="https://github.com/ifeanyiHM" target="_blank"
+        ><img src="./icons/github(1).svg" alt="a_link_to_github_profile"
+      /></a>
+      <p>HM</p>
     </footer>
 
     <div class="body_alert">
-        <div class="modal_alert">
-            <p>Submitted sucessfully</p>
-            <button class="okay_btn">OK</button>
-        </div>
+      <div class="modal_alert">
+        <p>Submitted sucessfully</p>
+        <button class="okay_btn">OK</button>
+      </div>
     </div>
 
     <!-- scroll back up buttondd -->
-    <a onclick="scrollMe()" id="scroll" href="#top"><img src="./icons/white-arrow.png" alt="scroll-back-up-button"></a>
+    <a onclick="scrollMe()" id="scroll" href="#top"
+      ><img src="./icons/white-arrow.png" alt="scroll-back-up-button"
+    /></a>
 
     <script src="feature.js"></script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
       AOS.init({
-        duration: 2000
-    });
+        duration: 2000,
+      });
     </script>
-</body>
+  </body>
 </html>

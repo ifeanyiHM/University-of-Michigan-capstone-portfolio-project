@@ -150,57 +150,75 @@ main .bord p::-webkit-scrollbar-thumb {
   height: 50%;
 }
 
-.card, #all_works {
+.card,
+#all_works {
   padding: 100px 40px 0 40px;
 }
-.card h1, #all_works h1 {
+.card h1,
+#all_works h1 {
   font-size: 3em;
   font-family: "Playfair Display";
   font-weight: 400;
   padding-bottom: 30px;
 }
-.card .contain, #all_works .contain {
+.card .contain,
+#all_works .contain {
   display: grid;
 }
-.card .contain .card-di, #all_works .contain .card-di {
+.card .contain .card-di,
+#all_works .contain .card-di {
   box-shadow: 3px 3px 5px 0 rgba(111, 78, 55, 0.3), -3px -3px 5px 0 rgba(111, 78, 55, 0.3);
   width: 100%;
   margin: 20px 0;
   border-radius: 10px;
   transition: 0.6s;
 }
-.card .contain .card-di .out_div .out, #all_works .contain .card-di .out_div .out {
+.card .contain .card-di .out_div .out,
+#all_works .contain .card-di .out_div .out {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
-.card .contain .card-di .contin, #all_works .contain .card-di .contin {
+.card .contain .card-di .contin,
+#all_works .contain .card-di .contin {
   padding: 10px 20px;
 }
-.card .contain .card-di .contin h2, #all_works .contain .card-di .contin h2 {
+.card .contain .card-di .contin h2,
+#all_works .contain .card-di .contin h2 {
   font-size: 1em;
   font-weight: 500;
   padding-bottom: 5px;
 }
-.card .contain .card-di .contin h2 a, #all_works .contain .card-di .contin h2 a {
+.card .contain .card-di .contin h2 a,
+#all_works .contain .card-di .contin h2 a {
   text-decoration: none;
   color: #000;
 }
-.card .contain .card-di .contin h2 a:hover, #all_works .contain .card-di .contin h2 a:hover {
+.card .contain .card-di .contin h2 a:hover,
+#all_works .contain .card-di .contin h2 a:hover {
   text-decoration: underline;
 }
-.card .contain .card-di .contin p, #all_works .contain .card-di .contin p {
+.card .contain .card-di .contin p,
+#all_works .contain .card-di .contin p {
   font-size: 0.8em;
   padding-bottom: 5px;
 }
-.card .contain .card-di .contin p a, #all_works .contain .card-di .contin p a {
+.card .contain .card-di .contin p a,
+#all_works .contain .card-di .contin p a {
   text-decoration: none;
   color: #000;
 }
-.card .contain .card-di .contin p a:hover, #all_works .contain .card-di .contin p a:hover {
+.card .contain .card-di .contin p a:hover,
+#all_works .contain .card-di .contin p a:hover {
   text-decoration: underline;
 }
-.card .contain .card-di .contin .bot, #all_works .contain .card-di .contin .bot {
-  display: inline-block;
+.card .contain .card-di .contin .icn,
+#all_works .contain .card-di .contin .icn {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.card .contain .card-di .contin .icn .bot,
+#all_works .contain .card-di .contin .icn .bot {
   padding: 4px 30px;
   border-radius: 5px;
   margin: 10px 0;
@@ -210,22 +228,24 @@ main .bord p::-webkit-scrollbar-thumb {
   text-decoration: none;
   color: #000;
 }
-.card .contain .card-di .contin .bot:hover, #all_works .contain .card-di .contin .bot:hover {
+.card .contain .card-di .contin .icn .bot:hover,
+#all_works .contain .card-di .contin .icn .bot:hover {
   color: rgb(255, 255, 255);
   font-weight: 300;
   background: #000;
   border-radius: 0;
 }
-.card .contain .card-di .contin img, #all_works .contain .card-di .contin img {
+.card .contain .card-di .contin .icn img,
+#all_works .contain .card-di .contin .icn img {
   width: 28px;
-  float: right;
-  padding-top: 27px;
   transition: 0.3s;
 }
-.card .contain .card-di .contin img:hover, #all_works .contain .card-di .contin img:hover {
+.card .contain .card-di .contin .icn img:hover,
+#all_works .contain .card-di .contin .icn img:hover {
   width: 30px;
 }
-.card #btn_works, #all_works #btn_works {
+.card #btn_works,
+#all_works #btn_works {
   display: inline-flex;
   background: rgba(3, 2, 73, 0.8);
   color: rgb(245, 241, 241);
@@ -275,7 +295,8 @@ main .bord p::-webkit-scrollbar-thumb {
   color: rgba(0, 0, 0, 0.7);
   box-shadow: 1px 1px 10px 0 rgba(0, 0, 0, 0.5);
 }
-#resume .container_cv p, #resume .container_cv li {
+#resume .container_cv p,
+#resume .container_cv li {
   font-size: 0.8em;
   font-weight: 500;
   line-height: 25px;
@@ -442,14 +463,16 @@ main .bord p::-webkit-scrollbar-thumb {
 .sect div #cont {
   display: none;
 }
-.sect div form input, .sect div form textarea {
+.sect div form input,
+.sect div form textarea {
   border: none;
   background-color: rgba(0, 0, 0, 0);
   border-bottom: 2px solid #f1f1f1;
   width: 100%;
   color: #fff;
 }
-.sect div form input:focus, .sect div form textarea:focus {
+.sect div form input:focus,
+.sect div form textarea:focus {
   border: 2px solid #f1f1f1;
   outline: none;
 }
@@ -458,7 +481,8 @@ main .bord p::-webkit-scrollbar-thumb {
   color: #fff;
   font-weight: 300;
 }
-.sect div form input, .sect div form label {
+.sect div form input,
+.sect div form label {
   display: block;
 }
 .sect div form input:-webkit-autofill,
@@ -600,14 +624,17 @@ footer img:hover {
   .hot {
     margin-bottom: 150px;
   }
-  .card, #all_works {
+  .card,
+  #all_works {
     padding: 100px 7% 0 7%;
   }
-  .card .contain, #all_works .contain {
+  .card .contain,
+  #all_works .contain {
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 30px;
   }
-  .card #btn_works, #all_works #btn_works {
+  .card #btn_works,
+  #all_works #btn_works {
     font-size: 0.9em;
     padding: 10px 40px;
   }
@@ -646,7 +673,8 @@ footer img:hover {
   .sect div form {
     padding: 20px 80px;
   }
-  .sect div form input, .sect div form textarea {
+  .sect div form input,
+  .sect div form textarea {
     width: 100%;
   }
   .sect div form label {
@@ -864,10 +892,12 @@ footer img:hover {
   .hot {
     margin-bottom: 200px;
   }
-  .card, #all_works {
+  .card,
+  #all_works {
     padding: 100px 12% 0 12%;
   }
-  .card .contain, #all_works .contain {
+  .card .contain,
+  #all_works .contain {
     grid-template-columns: repeat(3, 1fr);
   }
   #resume button {
@@ -919,10 +949,12 @@ footer img:hover {
   #body * {
     display: none;
   }
-  #body * .cv_pdf, #body * .cv_pdf * {
+  #body * .cv_pdf,
+  #body * .cv_pdf * {
     display: block;
   }
-  #body * .cv_pdf .imgg, #body * .cv_pdf * .imgg {
+  #body * .cv_pdf .imgg,
+  #body * .cv_pdf * .imgg {
     position: absolute;
     top: 0;
     left: 0;
