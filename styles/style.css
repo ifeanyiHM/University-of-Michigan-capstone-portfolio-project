@@ -5,7 +5,7 @@
 }
 
 header {
-  background-image: url(./images/desk-1220056.jpg);
+  background-image: url(../images/desk-1220056.jpg);
   background-repeat: no-repeat;
   background-size: 100% 51%;
   background-attachment: fixed;
@@ -447,7 +447,7 @@ main .bord p::-webkit-scrollbar-thumb {
 .sect {
   margin: 160px 0 0 0;
   background-color: #7c3901;
-  background-image: url(./images/old-352478_640.jpg);
+  background-image: url(../images/old-352478_640.jpg);
   background-repeat: no-repeat;
   background-size: 100% 100%;
 }

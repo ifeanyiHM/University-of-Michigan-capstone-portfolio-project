@@ -1,5 +1,5 @@
-import "./toolsData.js";
-import "./projectsData.js";
+import "./js_modules/toolsData.js";
+import "./js_modules/projectsData.js";
 
 const header = document.getElementById("top");
 const nav = document.querySelector("nav");
