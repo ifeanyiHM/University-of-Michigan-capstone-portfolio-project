@@ -470,6 +470,7 @@ main .bord p::-webkit-scrollbar-thumb {
   border-bottom: 2px solid #f1f1f1;
   width: 100%;
   color: #fff;
+  resize: none;
 }
 .sect div form input:focus,
 .sect div form textarea:focus {
