@@ -151,22 +151,22 @@ main .bord p::-webkit-scrollbar-thumb {
 }
 
 .card,
-#all_works {
+.sectio {
   padding: 100px 40px 0 40px;
 }
 .card h1,
-#all_works h1 {
+.sectio h1 {
   font-size: 3em;
   font-family: "Playfair Display";
   font-weight: 400;
   padding-bottom: 30px;
 }
 .card .contain,
-#all_works .contain {
+.sectio .contain {
   display: grid;
 }
 .card .contain .card-di,
-#all_works .contain .card-di {
+.sectio .contain .card-di {
   box-shadow: 3px 3px 5px 0 rgba(111, 78, 55, 0.3), -3px -3px 5px 0 rgba(111, 78, 55, 0.3);
   width: 100%;
   margin: 20px 0;
@@ -174,51 +174,51 @@ main .bord p::-webkit-scrollbar-thumb {
   transition: 0.6s;
 }
 .card .contain .card-di .out_div .out,
-#all_works .contain .card-di .out_div .out {
+.sectio .contain .card-di .out_div .out {
   width: 100%;
   border-radius: 10px 10px 0 0;
 }
 .card .contain .card-di .contin,
-#all_works .contain .card-di .contin {
+.sectio .contain .card-di .contin {
   padding: 10px 20px;
 }
 .card .contain .card-di .contin h2,
-#all_works .contain .card-di .contin h2 {
+.sectio .contain .card-di .contin h2 {
   font-size: 1em;
   font-weight: 500;
   padding-bottom: 5px;
 }
 .card .contain .card-di .contin h2 a,
-#all_works .contain .card-di .contin h2 a {
+.sectio .contain .card-di .contin h2 a {
   text-decoration: none;
   color: #000;
 }
 .card .contain .card-di .contin h2 a:hover,
-#all_works .contain .card-di .contin h2 a:hover {
+.sectio .contain .card-di .contin h2 a:hover {
   text-decoration: underline;
 }
 .card .contain .card-di .contin p,
-#all_works .contain .card-di .contin p {
+.sectio .contain .card-di .contin p {
   font-size: 0.8em;
   padding-bottom: 5px;
 }
 .card .contain .card-di .contin p a,
-#all_works .contain .card-di .contin p a {
+.sectio .contain .card-di .contin p a {
   text-decoration: none;
   color: #000;
 }
 .card .contain .card-di .contin p a:hover,
-#all_works .contain .card-di .contin p a:hover {
+.sectio .contain .card-di .contin p a:hover {
   text-decoration: underline;
 }
 .card .contain .card-di .contin .icn,
-#all_works .contain .card-di .contin .icn {
+.sectio .contain .card-di .contin .icn {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 .card .contain .card-di .contin .icn .bot,
-#all_works .contain .card-di .contin .icn .bot {
+.sectio .contain .card-di .contin .icn .bot {
   padding: 4px 30px;
   border-radius: 5px;
   margin: 10px 0;
@@ -229,23 +229,25 @@ main .bord p::-webkit-scrollbar-thumb {
   color: #000;
 }
 .card .contain .card-di .contin .icn .bot:hover,
-#all_works .contain .card-di .contin .icn .bot:hover {
+.sectio .contain .card-di .contin .icn .bot:hover {
   color: rgb(255, 255, 255);
   font-weight: 300;
   background: #000;
   border-radius: 0;
 }
 .card .contain .card-di .contin .icn img,
-#all_works .contain .card-di .contin .icn img {
+.sectio .contain .card-di .contin .icn img {
   width: 28px;
   transition: 0.3s;
 }
 .card .contain .card-di .contin .icn img:hover,
-#all_works .contain .card-di .contin .icn img:hover {
+.sectio .contain .card-di .contin .icn img:hover {
   width: 30px;
 }
-.card #btn_works,
-#all_works #btn_works {
+.card .display_page,
+.card .disl,
+.sectio .display_page,
+.sectio .disl {
   display: inline-flex;
   background: rgba(3, 2, 73, 0.8);
   color: rgb(245, 241, 241);
@@ -255,6 +257,17 @@ main .bord p::-webkit-scrollbar-thumb {
   padding: 10px 30px;
   float: right;
   cursor: pointer;
+}
+
+#all_works {
+  margin-bottom: 9rem;
+}
+#all_works #btn_works {
+  padding: 0px 20px 5px 20px;
+  line-height: 25px;
+}
+#all_works #btn_works span {
+  font-size: 1.5rem;
 }
 
 .display_section {
@@ -796,8 +809,11 @@ footer img:hover {
   .hot .lead .icon {
     font-size: 1em;
   }
-  .card #btn_works {
+  .card .display_page {
     padding: 15px 50px;
+  }
+  .sectio #btn_works {
+    padding: 0;
   }
   #resume button {
     margin: -70px 15% 0 0;

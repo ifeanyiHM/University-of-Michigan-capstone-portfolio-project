@@ -176,7 +176,7 @@ main {
 
 // Styling the project section
 .card,
-#all_works {
+.sectio {
   padding: 100px 40px 0 40px;
 
   h1 {
@@ -264,8 +264,6 @@ main {
 
           img {
             width: 28px;
-            //float: right;
-            //padding-top: 27px;
             transition: 0.3s;
 
             &:hover {
@@ -274,14 +272,11 @@ main {
           }
         }
       }
-
-      // &:hover{
-      //     width: 102%;
-      // }
     }
   }
 
-  #btn_works {
+  .display_page,
+  .disl {
     display: inline-flex;
     background: rgba(3, 2, 73, 0.8);
     color: rgb(245, 241, 241);
@@ -291,6 +286,18 @@ main {
     padding: 10px 30px;
     float: right;
     cursor: pointer;
+  }
+}
+
+#all_works {
+  margin-bottom: 9rem;
+
+  #btn_works {
+    padding: 0px 20px 5px 20px;
+    line-height: 25px;
+    span {
+      font-size: 1.5rem;
+    }
   }
 }
 
@@ -975,8 +982,14 @@ footer {
   }
 
   .card {
-    #btn_works {
+    .display_page {
       padding: 15px 50px;
+    }
+  }
+
+  .sectio {
+    #btn_works {
+      padding: 0;
     }
   }
 

@@ -91,6 +91,15 @@ document.querySelectorAll(".display_page").forEach((btnn) => {
   };
 });
 
+document.getElementById("btn_works").addEventListener("click", () => {
+  document.querySelectorAll(".hide_page").forEach((item) => {
+    item.style.display = "block";
+  });
+
+  document.getElementById("all_works").style.display = "none";
+  document.getElementById("btn_resume").style.display = "inline-flex";
+});
+
 const returnPage = document.getElementById("return_page");
 returnPage.addEventListener("click", (e) => {
   const closest = e.target.closest(".close");
