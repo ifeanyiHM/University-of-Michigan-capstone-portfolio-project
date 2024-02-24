@@ -121,8 +121,11 @@ returnPage.addEventListener("click", (e) => {
 });
 
 function printMe() {
-  print();
+  document.getElementById("printMe").addEventListener("click", () => {
+    print();
+  });
 }
+printMe();
 
 const form = document.querySelector("form");
 const post = async (e) => {
